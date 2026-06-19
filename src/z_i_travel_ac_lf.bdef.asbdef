@@ -11,11 +11,11 @@ authorization master ( instance )
   update;
   delete;
 
-  field ( readonly, numbering : managed ) TravelUuid;
+  field ( readonly, numbering : managed ) TravelUUID;
 
   mapping for zlf_travel corresponding
     {
-      traveluuid         = Travel_Uuid;
+      travelUUID         = travel_uuid;
       TravelID           = travel_id;
       AgencyID           = agency_id;
       CustomerID         = customer_id;
