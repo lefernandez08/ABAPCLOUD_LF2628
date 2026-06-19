@@ -7,7 +7,7 @@
     sizeCategory: #S,
     dataClass: #MIXED
 }
-define view entity z_i_travel_ac_lf
+define root view entity z_i_travel_ac_lf
   as select from zlf_travel
 {
   key travel_uuid           as TravelUUID,

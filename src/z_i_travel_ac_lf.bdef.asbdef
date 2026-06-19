@@ -1,0 +1,36 @@
+managed implementation in class zbp_i_travel_ac_lf unique;
+strict ( 2 );
+
+define behavior for z_i_travel_ac_lf alias Travel
+persistent table zlf_travel
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+
+  field ( readonly, numbering : managed ) TravelUuid;
+
+  mapping for zlf_travel corresponding
+    {
+      traveluuid         = Travel_Uuid;
+      TravelID           = travel_id;
+      AgencyID           = agency_id;
+      CustomerID         = customer_id;
+      BeginDate          = begin_date;
+      EndDate            = end_date;
+      BookingFee         = booking_fee;
+      TotalPrice         = total_price;
+      CurrencyCode       = currency_code;
+      Description        = description;
+      OverallStatus      = overall_status;
+      LocalCreatedBy     = local_created_by;
+      LocalCreatedAt     = local_created_at;
+      LocalLastChangedBy = local_last_changed_by;
+      LocalLastChangedAt = local_last_changed_at;
+      LastChangedAt      = last_changed_at;
+    }
+
+}
