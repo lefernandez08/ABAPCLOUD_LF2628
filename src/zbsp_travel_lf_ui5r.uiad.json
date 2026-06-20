@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Travel LF",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Travel LF APP"
+  },
+  "ui5AppDetails": {
+    "appId": "lfernandezgruop.travel"
+  },
+  "navigation": {
+    "targetMappingId": "ZBSP_TRAVEL_LF_UI5R_TM",
+    "semanticObject": "Travel",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "ZBSP_TRAVEL_LF_UI5R_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Travel LF APP"
+      }
+    }
+  ]
+}
