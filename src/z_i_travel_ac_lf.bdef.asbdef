@@ -1,9 +1,12 @@
 managed implementation in class zbp_i_travel_ac_lf unique;
 strict ( 2 );
+with draft;
 
 define behavior for z_i_travel_ac_lf alias Travel
 persistent table zlf_travel
-lock master
+draft table zlf_travel_d
+etag master LocalLastChangedBy
+lock master total etag LastChangedAt
 authorization master ( instance )
 //etag master <field_name>
 {
@@ -12,6 +15,11 @@ authorization master ( instance )
   delete;
 
   field ( readonly, numbering : managed ) TravelUUID;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
 
   mapping for zlf_travel corresponding
     {
