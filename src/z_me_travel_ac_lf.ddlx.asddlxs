@@ -6,7 +6,7 @@
     //imageUrl: '',
     title: {
         type: #STANDARD,
-        //label: '',
+        label: 'Reporte de Travel App',
         //iconUrl: '',
         //criticality: '',
         //criticalityRepresentation: #WITHOUT_ICON,
@@ -17,7 +17,7 @@
     },
     description: {
         type: #STANDARD,
-        //label: '',
+        label: 'Reporte de Travel App',
         //iconUrl: '',
         //criticality: '',
         //criticalityRepresentation: #WITHOUT_ICON,
