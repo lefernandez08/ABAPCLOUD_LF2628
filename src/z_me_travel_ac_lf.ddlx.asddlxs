@@ -82,10 +82,7 @@ annotate entity z_c_travel_ac_lf with
                       importance: #HIGH }],
      identification: [{ position: 70 } ] }
 
-  TotalPrice;
-  @UI: { lineItem: [{ position: 80,
-                      importance: #HIGH }],
-     identification: [{ position: 80 } ] }
+
 
   //  CurrencyCode;
   //  @UI: { lineItem: [{ position: 90,
@@ -93,6 +90,11 @@ annotate entity z_c_travel_ac_lf with
   //     identification: [{ position: 90 } ] }
 
   Description;
+  @UI: { lineItem: [{ position: 80,
+                      importance: #HIGH }],
+     identification: [{ position: 80 } ] }
+
+  TotalPrice;
   @UI: { lineItem: [{ position: 90,
                       importance: #HIGH }],
      identification: [{ position: 90 } ] }
