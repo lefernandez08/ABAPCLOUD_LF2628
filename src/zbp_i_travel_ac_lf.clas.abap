@@ -6,4 +6,5 @@ class zbp_i_travel_ac_lf definition
 endclass.
 
 class zbp_i_travel_ac_lf implementation.
+
 endclass.
